@@ -1,0 +1,21 @@
+#homeBody{
+    width:100vw;
+    height: 100vh;
+}
+header{
+    height: 5%;
+    background-color: red;
+}
+#homeArticle{
+    height: 95%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+#homeSearch{
+    margin-left: 23%;
+    margin-top: 10%;
+}
+#eFLogo{
+    margin-left: 18%;
+}

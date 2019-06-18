@@ -74,7 +74,7 @@ class Episode extends Component {
                 })
 
                 console.log(this.state.newReview)
-                window.location.reload();
+                this.setState({ redirectToHome: true})
             })
     }
     updateReview = (e) => {
@@ -91,7 +91,7 @@ class Episode extends Component {
                     updateUser: ''
                 } })
             })
-            window.location.reload();
+            this.setState({ redirectToHome: true})
 
     }
     createComment = (e) => {
@@ -110,7 +110,7 @@ class Episode extends Component {
                 })
 
                 console.log(this.state.newComment)
-                window.location.reload();
+                this.setState({ redirectToHome: true})
             })
     }
     stopFormQuery = (e) =>  {
@@ -128,7 +128,7 @@ class Episode extends Component {
             // .then(res => {
             //     this.setState({ redirectToHome: true })
             // })
-        window.location.reload();
+            this.setState({ redirectToHome: true})
     }
     handleReviewChange = (event) => {
         const cloneNewReview = { ...this.state.newReview }
